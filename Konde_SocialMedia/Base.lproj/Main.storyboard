@@ -1,24 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4N6-Ej-uYa">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Konde_SocialMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm7-eb-Xua">
+                                <rect key="frame" x="10" y="69" width="373" height="690"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.86078912019729614" green="0.52403501965774613" blue="0.54314706923950284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vm7-eb-Xua" secondAttribute="trailing" constant="10" id="1gZ-8L-KTp"/>
+                            <constraint firstItem="vm7-eb-Xua" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="D0U-SJ-Axb"/>
+                            <constraint firstItem="vm7-eb-Xua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="U51-gR-SCn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vm7-eb-Xua" secondAttribute="bottom" constant="10" id="avq-hR-eXT"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ZtI-Jx-pqp"/>
+                    <connections>
+                        <outlet property="FiWeb" destination="vm7-eb-Xua" id="wJi-Cb-s6A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1066.4122137404579" y="-2.1126760563380285"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="0O8-np-6W2">
+            <objects>
+                <viewController id="gyE-Ab-NXM" customClass="HamptonViewController" customModule="Konde_SocialMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g48-Pi-aGB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCp-o6-KtJ">
+                                <rect key="frame" x="10" y="69" width="373" height="690"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AiL-85-I6u"/>
+                        <color key="backgroundColor" red="0.69558551127041945" green="0.865990161808046" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AiL-85-I6u" firstAttribute="bottom" secondItem="RCp-o6-KtJ" secondAttribute="bottom" constant="10" id="UL0-co-i7S"/>
+                            <constraint firstItem="RCp-o6-KtJ" firstAttribute="leading" secondItem="AiL-85-I6u" secondAttribute="leading" constant="10" id="VDp-GN-epX"/>
+                            <constraint firstItem="AiL-85-I6u" firstAttribute="trailing" secondItem="RCp-o6-KtJ" secondAttribute="trailing" constant="10" id="d7C-xd-eLe"/>
+                            <constraint firstItem="RCp-o6-KtJ" firstAttribute="top" secondItem="AiL-85-I6u" secondAttribute="top" constant="10" id="i3h-MX-rhk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="VPx-yL-sv0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zZ-0O-k99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.2977099236641" y="-2.1126760563380285"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="JLJ-q3-Se7">
+            <objects>
+                <viewController id="eUo-Mi-2Lb" customClass="HamViewController" customModule="Konde_SocialMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JM3-aS-Iw8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMa-gx-wF1">
+                                <rect key="frame" x="10" y="69" width="373" height="690"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NCq-4Q-bOM"/>
+                        <color key="backgroundColor" red="0.77043510461759279" green="1" blue="0.65263442210521605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NCq-4Q-bOM" firstAttribute="trailing" secondItem="OMa-gx-wF1" secondAttribute="trailing" constant="10" id="4K8-lm-Y3J"/>
+                            <constraint firstItem="OMa-gx-wF1" firstAttribute="leading" secondItem="NCq-4Q-bOM" secondAttribute="leading" constant="10" id="FuQ-Ry-wwD"/>
+                            <constraint firstItem="NCq-4Q-bOM" firstAttribute="bottom" secondItem="OMa-gx-wF1" secondAttribute="bottom" constant="10" id="T7D-FQ-2zs"/>
+                            <constraint firstItem="OMa-gx-wF1" firstAttribute="top" secondItem="NCq-4Q-bOM" secondAttribute="top" constant="10" id="peq-ZY-PsY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="wfG-Hn-HYw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwJ-DI-83H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556.4885496183206" y="-2.1126760563380285"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="B1j-nN-4zr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4N6-Ej-uYa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gKh-Bs-icU">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sKv-6h-kHo"/>
+                        <segue destination="gyE-Ab-NXM" kind="relationship" relationship="viewControllers" id="Gf1-QR-Pqh"/>
+                        <segue destination="eUo-Mi-2Lb" kind="relationship" relationship="viewControllers" id="351-VV-6Lh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sx-gB-sff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831" y="-748"/>
         </scene>
     </scenes>
 </document>

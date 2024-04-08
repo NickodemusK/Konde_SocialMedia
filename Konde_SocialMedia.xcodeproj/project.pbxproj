@@ -13,6 +13,8 @@
 		D6513DBC2BBB0EAE004977E9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D6513DBB2BBB0EAE004977E9 /* Base */; };
 		D6513DBE2BBB0EB1004977E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6513DBD2BBB0EB1004977E9 /* Assets.xcassets */; };
 		D6513DC12BBB0EB1004977E9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D6513DC02BBB0EB1004977E9 /* Base */; };
+		D6513DC92BC44262004977E9 /* HamptonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513DC82BC44262004977E9 /* HamptonViewController.swift */; };
+		D6513DCB2BC442D9004977E9 /* HamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513DCA2BC442D9004977E9 /* HamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D6513DBD2BBB0EB1004977E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6513DC02BBB0EB1004977E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6513DC22BBB0EB1004977E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6513DC82BC44262004977E9 /* HamptonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamptonViewController.swift; sourceTree = "<group>"; };
+		D6513DCA2BC442D9004977E9 /* HamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				D6513DB42BBB0EAE004977E9 /* AppDelegate.swift */,
 				D6513DB62BBB0EAE004977E9 /* SceneDelegate.swift */,
 				D6513DB82BBB0EAE004977E9 /* ViewController.swift */,
+				D6513DC82BC44262004977E9 /* HamptonViewController.swift */,
+				D6513DCA2BC442D9004977E9 /* HamViewController.swift */,
 				D6513DBA2BBB0EAE004977E9 /* Main.storyboard */,
 				D6513DBD2BBB0EB1004977E9 /* Assets.xcassets */,
 				D6513DBF2BBB0EB1004977E9 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6513DC92BC44262004977E9 /* HamptonViewController.swift in Sources */,
+				D6513DCB2BC442D9004977E9 /* HamViewController.swift in Sources */,
 				D6513DB92BBB0EAE004977E9 /* ViewController.swift in Sources */,
 				D6513DB52BBB0EAE004977E9 /* AppDelegate.swift in Sources */,
 				D6513DB72BBB0EAE004977E9 /* SceneDelegate.swift in Sources */,
